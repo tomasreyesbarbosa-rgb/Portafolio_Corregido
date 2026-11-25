@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomás Reyes Barbosa | Técnico en Software Innovador</title>
+    <meta name="description" content="Portafolio de Tomás Reyes Barbosa, técnico en software innovador. Desarrollo web, inteligencia artificial y oratoria. Conoce mis proyectos y contáctame.">
+    <meta name="theme-color" content="#121417">
+
+    <!-- Open Graph (vista previa al compartir el enlace) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tomás Reyes Barbosa | Técnico en Software Innovador">
+    <meta property="og:description" content="Uniendo comunicación y código: desarrollo web, inteligencia artificial y oratoria.">
+    <meta property="og:locale" content="es_CO">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23121417'/%3E%3Ctext x='50' y='66' font-family='Arial' font-size='46' font-weight='700' text-anchor='middle' fill='%23d4af37'%3ETR%3C/text%3E%3C/svg%3E">
+
+    <!-- FontAwesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Barra de progreso de scroll -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Navegación -->
+    <header>
+        <div class="logo">TOMÁS <span>REYES</span></div>
+        <nav aria-label="Navegación principal">
+            <a href="#inicio" class="active">Inicio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Sección Hero / Presentación -->
+    <section id="inicio" class="hero">
+        <div class="hero-glow hero-glow-gold" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-purple" aria-hidden="true"></div>
+
+        <div class="hero-text">
+            <h2 id="typed-role">TÉCNICO EN SOFTWARE INNOVADOR</h2>
+            <h1>Uniendo Comunicación &amp; Código</h1>
+            <p>Apasionado por el desarrollo de software, la integración de Inteligencia Artificial y la comunicación efectiva a través de la oratoria.</p>
+            <div class="btn-group">
+                <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+        <div class="hero-img-wrap">
+            <div class="hero-ring" aria-hidden="true"></div>
+            <div class="hero-img-container">
+                <img src="Imagenes/foto-perfil.jpg" alt="Tomás Reyes Barbosa" width="350" height="350" fetchpriority="high">
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades y Stack Tecnológico -->
+    <section id="habilidades">
+        <h2 class="section-title reveal">Stack Tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-html5"></i>
+                <h4>HTML5</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS3</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-python"></i>
+                <h4>Python</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-brain"></i>
+                <h4>Inteligencia Artificial</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-brands fa-github"></i>
+                <h4>Git / GitHub</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-terminal"></i>
+                <h4>Pseint</h4>
+            </div>
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-comments"></i>
+                <h4>Oratoria</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos: al hacer clic se abre la vista ampliada (modal + carrusel) -->
+    <section id="proyectos">
+        <h2 class="section-title reveal">Proyectos Destacados</h2>
+        <div class="projects-grid">
+
+            <!-- Proyecto 1: TecnoStock -->
+            <article class="project-card reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver detalles del proyecto TecnoStock">
+                <div class="project-media">
+                    <img src="Imagenes/image_36.png" alt="TecnoStock - Catálogo E-commerce" loading="lazy">
+                    <span class="project-hint"><i class="fa-solid fa-expand"></i> Ver proyecto</span>
+                </div>
+                <div class="project-content">
+                    <h3>TecnoStock - Catálogo E-commerce</h3>
+                    <p>Diseño y desarrollo de una plataforma de venta de tecnología con un catálogo de productos flexible, filtros dinámicos y experiencia de usuario optimizada.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 2: CampusShop -->
+            <article class="project-card reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver detalles del proyecto CampusShop">
+                <div class="project-media">
+                    <img src="Imagenes/image_34.png" alt="CampusShop - Tienda Multidispositivo" loading="lazy">
+                    <span class="project-hint"><i class="fa-solid fa-expand"></i> Ver proyecto</span>
+                </div>
+                <div class="project-content">
+                    <h3>CampusShop - Tienda Multidispositivo</h3>
+                    <p>Implementación de una tienda online de ropa con secciones de categorías y novedades, con un diseño responsivo para una experiencia fluida en escritorio y móvil.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 3: Tienda Fake -->
+            <article class="project-card reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver detalles del proyecto Tienda Fake">
+                <div class="project-media">
+                    <img src="Imagenes/image_35.png" alt="Tienda Fake - Plataforma Escalable" loading="lazy">
+                    <span class="project-hint"><i class="fa-solid fa-expand"></i> Ver proyecto</span>
+                </div>
+                <div class="project-content">
+                    <h3>Tienda Fake - Plataforma Escalable</h3>
+                    <p>Creación de un e-commerce flexible que se adapta a múltiples formatos de pantalla, demostrando consistencia de diseño entre escritorio, laptop, tablet y móvil.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Proyecto 4: Mr. Mø Tattoo Studio -->
+            <article class="project-card reveal" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver detalles del proyecto Mr. Mø Tattoo Studio"
+                     data-note="Apoyo en diseño de interfaz y recursos gráficos a medida.">
+                <div class="project-media">
+                    <img src="Imagenes/Imagen_37.jpeg" alt="Landing page de Mr. Mø Tattoo Studio en computador y celular" width="1376" height="768" loading="lazy">
+                    <span class="project-hint"><i class="fa-solid fa-expand"></i> Ver proyecto</span>
+                </div>
+                <div class="project-content">
+                    <h3>Diseño y Desarrollo Web — Mr. Mø Tattoo Studio</h3>
+                    <p>Creación de una landing page moderna, rápida y adaptable a celulares para un estudio de tatuajes privado. Diseñada bajo una paleta oscura de alto contraste con acentos metálicos, optimizada para convertir visitas en citas mediante integración directa con WhatsApp, Instagram y Google Maps.</p>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Inteligencia Artificial</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2 class="section-title reveal">Contacto</h2>
+        <div class="contact-container reveal">
+            <p>¿Interesado en colaborar o conocer más sobre mis proyectos? Puedes escribirme directamente a mi correo:</p>
+            <h3 class="contact-email">tomasreyesbarbosa@gmail.com</h3>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tomas-reyes-11968b40a" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/tomasreyesbarbosa-rgb" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:tomasreyesbarbosa@gmail.com" title="Correo Electrónico" aria-label="Correo electrónico"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Tomás Reyes Barbosa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vista ampliada del proyecto + carrusel -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-backdrop" data-close></div>
+
+        <button class="modal-nav modal-prev" type="button" aria-label="Proyecto anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="modal-nav modal-next" type="button" aria-label="Proyecto siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="modal-dialog">
+            <button class="modal-close" type="button" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+
+            <div class="modal-body">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p class="modal-desc"></p>
+                    <p class="modal-note"></p>
+                    <h4>Lenguajes y tecnologías</h4>
+                    <div class="tags modal-tags"></div>
+                </div>
+                <div class="modal-media">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <span class="modal-counter" aria-live="polite"></span>
+                <div class="modal-dots" role="tablist" aria-label="Seleccionar proyecto"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
