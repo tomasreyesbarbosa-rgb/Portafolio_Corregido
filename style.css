@@ -764,7 +764,8 @@ footer {
 
 .modal-media {
     display: grid;
-    overflow: hidden;
+    min-height: min-content;
+    overflow: clip;
     place-items: center;
     border: 1px solid var(--border-color);
     border-radius: 10px;
@@ -886,16 +887,28 @@ footer {
 }
 
 @media (max-width: 800px) {
+    /* Flex en columna: ningún bloque se comprime ni se superpone; el scroll lo hace el modal */
     .modal-body {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
-        align-items: start;
+        align-items: stretch;
         padding: 3.2rem 1.5rem 1rem;
     }
 
+    .modal-body > * {
+        flex-shrink: 0;
+    }
+
     /* En móvil la imagen va primero */
-    .modal-media { order: -1; }
-    .modal-media img { max-height: 40vh; }
+    .modal-media {
+        order: -1;
+        width: 100%;
+    }
+
+    .modal-media img {
+        max-height: 40vh;
+    }
     .modal-footer { padding: 0.9rem 1.5rem 1.2rem; }
 }
 
@@ -954,7 +967,6 @@ footer {
     .modal-next { right: 0.9rem; }
 }
 
-/* Dispositivos táctiles: el hint siempre visible */
 @media (hover: none) {
     .project-hint {
         opacity: 1;
@@ -962,7 +974,6 @@ footer {
     }
 }
 
-/* Respeto a quien prefiere menos movimiento */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
